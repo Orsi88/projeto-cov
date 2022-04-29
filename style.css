@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;1,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&display=swap');
+
+
+
+:root {
+
+    --cor0:#1A2601;
+    --cor1:#5D730D;
+    --cor2:#403726;
+    --cor3:#BFAC95;
+    --cor4:#d65803;
+
+    --fonte-principal:'Stardos Stencil', cursive;
+    --fonte-secundaria:'Averia Serif Libre', cursive;
+    --fonte-terciaria:'Space Mono', monospace;
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor0);
+}
+
+header {
+    height: 12vh;
+    background-color: var(--cor3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    font-family: var(--fonte-principal);
+    border-radius: 5px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.562);
+    margin-bottom: 80px;
+}
+
+.cabeçalho {
+    margin-top: 10px;
+    display: flex;
+    justify-content: row;
+    align-items: center;
+    font-size: 35px;
+    color: var(--cor0);
+    padding: 20px;
+    color: var(--cor2);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.479);
+}
+
+.cabeçalho-menu-item {
+    color: var(--cor2);
+    font-size: 28px;
+    text-decoration: none;
+    margin-right: 20px;
+    
+}
+
+nav :hover {
+    text-decoration: underline;
+    color: var(--cor4);
+}
+
+#logo {
+    width: 100%;
+}
+
+.img-1 {
+    margin: 20px;
+    border-radius: 10px;
+    height: 500px;
+    background-image: url(imagens/ipe-amarelo.jpg);
+    background-position: center center;
+    background-size: cover ;
+    background-attachment: fixed;
+    box-shadow:  6px 6px 12px rgba(0, 0, 0, 0.452);
+}
+
+
+
+.img-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px;
+}
+
+
+
+.img-2 :hover {
+    filter:brightness(80%);
+}
+
+@media (max-width: 999px) {
+
+    header {
+        height: 13vh;
+    }
+
+    nav.cabeçalho-menu {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        
+    }
+
+    nav.cabeçalho-menu :hover {
+        background-color: var(--cor2);
+        color: var(--cor3);
+    }
+
+    .cabeçalho-menu-item {
+        padding: 5px;
+        font-size: 15px;
+        text-align: center;
+        background-color: #4037267c;
+        margin: 2px;
+        color: var(--cor0);
+        font-weight: bolder;
+        border-radius: 5px;
+        box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.541);
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.568);
+    }
+
+    .img-1 {
+        background-image: url(imagens/ipe-amarelo-p.jpg);
+
+    }
+   
+   
+
+}
+
+@media (max-width: 1400px) {
+
+    .img-2 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
