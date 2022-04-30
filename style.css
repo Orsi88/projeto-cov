@@ -129,12 +129,12 @@ header {
 
     .nav-list {
         position: absolute;
-        top: 8vh;
+        top: 13vh;
         right: 0;
-        width: 50vw;
-        height: 60vh;
+        width: 100vw;
+        height: 10vh;
         background: var(--cor0);
-        flex-direction: column;
+        flex-direction:row;
         align-items: center;
         justify-content: space-around;
         border-radius: 10px;
@@ -175,7 +175,35 @@ header {
     height: 600px;
     margin: 10px;
     background-image: url('imagens/fundo-2.jpg');
-    filter: brightness(40%);
     background-position: center center;
     background-size: cover ;
+    border-radius: 5px;
+    
+}
+
+.texto-1 {
+    height: 300px;
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    margin-top: 150px;
+    background-color:#a1ac8e4b;
+    border-radius: 5px;
+    
+}
+
+.filtro {
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.555);
+    border-radius: 5px;
+}
+
+.texto-1 h2 {
+    
+    color: var(--cor5);
+    text-align: center;
+    margin-top: 140px;
+    font-family: 'Pompiere', cursive;
+    font-size: 30px;
+    letter-spacing: 2px;
 }
