@@ -1,149 +1,121 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;1,300&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&display=swap');
-
-
-
-:root {
-
-    --cor0:#1A2601;
-    --cor1:#5D730D;
-    --cor2:#403726;
-    --cor3:#BFAC95;
-    --cor4:#d65803;
-
-    --fonte-principal:'Stardos Stencil', cursive;
-    --fonte-secundaria:'Averia Serif Libre', cursive;
-    --fonte-terciaria:'Space Mono', monospace;
-
-}
+@import url('https://fonts.googleapis.com/css2?family=Chicle&display=swap');
 
 * {
     margin: 0px;
     padding: 0px;
 }
 
+:root {
+    --cor0:#A1AC8E;
+    --cor1:#6C765B;
+    --cor2:#AE784A;
+    --cor3:#714425;
+    --cor4:#E33F7E;
+    --cor5:#EBEFF2;
+}
+
 body {
-    background-color: var(--cor0);
+    background-color: #6C765B;
 }
 
-header {
-    height: 12vh;
-    background-color: var(--cor3);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px;
-    font-family: var(--fonte-principal);
-    border-radius: 5px;
-    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.562);
-    margin-bottom: 80px;
-}
-
-.cabeçalho {
-    margin-top: 10px;
-    display: flex;
-    justify-content: row;
-    align-items: center;
-    font-size: 35px;
-    color: var(--cor0);
-    padding: 20px;
-    color: var(--cor2);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.479);
-}
-
-.cabeçalho-menu-item {
-    color: var(--cor2);
-    font-size: 28px;
+a {
+    color: var(--cor3);
     text-decoration: none;
-    margin-right: 20px;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    padding: 20px;
+    font-size: 35px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.247);
     
 }
 
-nav :hover {
-    text-decoration: underline;
-    color: var(--cor4);
-}
-
-#logo {
-    width: 100%;
-}
-
-.img-1 {
-    margin: 20px;
-    border-radius: 10px;
-    height: 500px;
-    background-image: url(imagens/ipe-amarelo.jpg);
-    background-position: center center;
-    background-size: cover ;
-    background-attachment: fixed;
-    box-shadow:  6px 6px 12px rgba(0, 0, 0, 0.452);
+.logo-caixa {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: var(--cor3);
+    
 }
 
 
-
-.img-2 {
+header {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 20px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cor0);
+    font-family: 'Chicle', cursive;
+    height: 12vh;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.219);
 }
 
-
-
-.img-2 :hover {
-    filter:brightness(80%);
+.nav-list {
+    list-style: none;
+    display: flex;
+    font-size: 20px;
 }
 
-@media (max-width: 999px) {
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
 
-    header {
-        height: 13vh;
+.mobile-menu {
+    display: none;
+  cursor: pointer;  
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background-color: var(--cor3);
+    margin: 8px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.336);
+}
+
+@media (max-width: 500px){
+
+    .logo {
+        font-size: 30px;
     }
 
-    nav.cabeçalho-menu {
-        display: flex;
+
+}
+
+@media (max-width: 750px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-list {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 60vh;
+        background: var(--cor0);
         flex-direction: column;
-        margin: 10px;
-        
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 10px;
+        transform: translateX(100%);
     }
 
-    nav.cabeçalho-menu :hover {
-        background-color: var(--cor2);
-        color: var(--cor3);
+    .nav-list li {
+        margin-left: 0;
     }
 
-    .cabeçalho-menu-item {
-        padding: 5px;
-        font-size: 15px;
-        text-align: center;
-        background-color: #4037267c;
-        margin: 2px;
-        color: var(--cor0);
-        font-weight: bolder;
-        border-radius: 5px;
-        box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.541);
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.568);
-    }
-
-    .img-1 {
-        background-image: url(imagens/ipe-amarelo-p.jpg);
-
-    }
-   
-   
-
-}
-
-@media (max-width: 1400px) {
-
-    .img-2 {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
+    .mobile-menu {
+        display: block;
     }
 }
