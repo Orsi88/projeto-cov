@@ -157,6 +157,9 @@ header {
     .nav-list.active {
         transform: translateX(0);
     }
+
+   
+
 }
 
 @keyframes navLinkFade {
@@ -173,7 +176,7 @@ header {
 }
 
 .img-1 {
-    height: 600px;
+    height: 500px;
     margin: 10px;
     background-image: url('imagens/fundo-2.jpg');
     background-position: center center;
@@ -183,18 +186,18 @@ header {
 }
 
 .texto-1 {
-    height: 300px;
+    height: 200px;
     position: absolute;
-    left: 10%;
-    right: 10%;
+    left: 12%;
+    right: 12%;
     margin-top: 150px;
-    background-color:#a1ac8e4b;
+    background-color:#a1ac8e49;
     border-radius: 5px;
     
 }
 
 .filtro {
-    height: 600px;
+    height: 500px;
     background-color: rgba(0, 0, 0, 0.555);
     border-radius: 5px;
 }
@@ -203,8 +206,56 @@ header {
     
     color: var(--cor5);
     text-align: center;
-    margin-top: 140px;
+    margin-top: 90px;
     font-family: 'Pompiere', cursive;
     font-size: 30px;
     letter-spacing: 2px;
+}
+
+
+.mãe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.filha {
+    
+}
+
+@media (max-width: 1600px) {
+
+    .mãe {
+        display: flex;
+        flex-flow: row wrap;
+        
+    }
+    
+    .filha {
+        width: 33%;
+    } 
+}
+
+@media (max-width: 1000px) {
+
+    .mãe {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    
+    .filha {
+        width: 50%;
+    } 
+}
+@media (max-width: 500px) {
+
+    .mãe {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    
+    .filha {
+        width: 100%;
+    } 
 }
