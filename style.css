@@ -4,6 +4,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
@@ -19,6 +21,7 @@
 
     --fonte-principal:'Pompiere', cursive;
     --fonte-secundaria:'Amatic SC', cursive;
+    --fonte-terciaria: 'Kalam', cursive;;
 }
 
 body {
@@ -68,12 +71,14 @@ header {
     font-family: 'Pompiere', cursive;
     font-weight: bolder;
     margin: 30px;
-    height: 10vh;
+    height: 14vh;
     padding-top: 20px;
+    
+    
 }
 
 .menu {
-    margin-right: 30px;
+    margin-right: 20px;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.295);
 }
 
@@ -92,7 +97,8 @@ header {
 
 .mobile-menu {
     display: none;
-    cursor: pointer;  
+    cursor: pointer; 
+
 
 }
 
@@ -135,6 +141,7 @@ header {
 
 
     .nav-list {
+        margin-top: 30px;
         position: absolute;
         top: 16vh;
         right: 0;
@@ -200,9 +207,6 @@ header {
     left: 1%;
     right: 1%;
     margin-top: 150px;
-    background-color: ;
-    border-radius: 5px;
-    
     
 }
 
@@ -238,7 +242,28 @@ header {
 }
 
 .txt-1 {
-    height: 500px;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.txt-12 {
+    height: 400px;
+    width: 700px;
+    text-align: justify;
+    font-family: var(--fonte-principal);
+    font-size: 25px;
+    background-color: var(--cor1);
+    padding: 20px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.534);
+    text-shadow: 1px 1px 2px #714325be;
+    border-radius: 5px;
+}
+
+.txt-12 h2, h3 {
+    font-family: var(--fonte-secundaria);
 }
 
 @media (max-width: 1600px) {
@@ -264,6 +289,30 @@ header {
     .filha {
         width: 50%;
     } 
+
+    .txt-1 {
+        display: flex;
+        flex-direction: column;
+        height: 1000px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    .txt-12 {
+        height: 900px;
+        width: 500px;
+        text-align: justify;
+        font-family: var(--fonte-principal);
+        font-size: 25px;
+        background-color: var(--cor1);
+        padding: 20px;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.534);
+        text-shadow: 1px 1px 2px #714325be;
+        border-radius: 5px;
+    
+    
 }
 @media (max-width: 500px) {
 
@@ -275,4 +324,27 @@ header {
     .filha {
         width: 100%;
     } 
+
+    .txt-1 {
+        display: flex;
+        flex-direction: column;
+        height: 1200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    .txt-12 {
+        height: 900px;
+        width: 280px;
+        text-align: justify;
+        font-family: var(--fonte-principal);
+        font-size: 25px;
+        background-color: var(--cor1);
+        padding: 20px;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.534);
+        text-shadow: 1px 1px 2px #714325be;
+        border-radius: 5px;
+    }
 }
