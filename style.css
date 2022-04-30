@@ -17,7 +17,7 @@
 }
 
 body {
-    background-color: #6C765B;
+    background-color: var(--cor0);
     overflow-x: hidden;
 }
 
