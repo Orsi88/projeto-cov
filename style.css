@@ -170,3 +170,12 @@ header {
         transform: translateX(0);
     }
 }
+
+.img-1 {
+    height: 600px;
+    margin: 10px;
+    background-image: url('imagens/fundo-2.jpg');
+    filter: brightness(40%);
+    background-position: center center;
+    background-size: cover ;
+}
