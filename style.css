@@ -36,7 +36,7 @@ a:hover {
     align-items: center;
     margin-top: 10px;
     padding: 20px;
-    font-size: 35px;
+    font-size: 28px;
     text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.418);
     
 }
@@ -95,7 +95,7 @@ header {
 @media (max-width: 500px){
 
     .logo {
-        font-size: 30px;
+        font-size: 21px;
     }
 
    
