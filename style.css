@@ -17,6 +17,7 @@
 }
 
 body {
+    overflow-x: hidden;
     background-color: #6C765B;
 }
 
@@ -40,6 +41,7 @@ a:hover {
     
 }
 
+
 .logo-caixa {
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -58,15 +60,21 @@ header {
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.219);
 }
 
+.menu {
+    margin-right: 30px;
+}
+
 .nav-list {
     list-style: none;
     display: flex;
     font-size: 20px;
+    
 }
 
 .nav-list li {
     letter-spacing: 3px;
     margin-left: 32px;
+    
 }
 
 .mobile-menu {
@@ -109,6 +117,10 @@ header {
         justify-content: space-around;
         border-radius: 10px;
         transform: translateX(100%);
+    }
+
+    .menu {
+        margin-right: 0px;
     }
 
     .nav-list li {
