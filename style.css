@@ -242,10 +242,11 @@ header {
 }
 
 .txt-1 {
-    height: 900px;
+    height: 700px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 60px;
 
 }
 
@@ -266,6 +267,21 @@ header {
     font-family: var(--fonte-secundaria);
 }
 
+.espaço {
+    background-color: #a0613788;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.espaço h3 {
+    margin: auto;
+    font-family: var(--fonte-secundaria);
+    text-shadow: 2px 2px 4px #502c14;
+}
+
 @media (max-width: 1600px) {
 
     .mãe {
@@ -277,6 +293,8 @@ header {
     .filha {
         width: 33%;
     } 
+
+    
 }
 
 @media (max-width: 1000px) {
