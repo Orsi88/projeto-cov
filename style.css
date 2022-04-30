@@ -112,6 +112,7 @@ header {
     .apoio-1 {
         display: block;
         padding: 100px;
+        margin: 30px;
     }
 
     .logo {
@@ -122,14 +123,14 @@ header {
     header {
         display: flex;
         justify-content: center;
-        margin-left: 60px;
+        margin-left: 70px;
 
     }
 
 
     .nav-list {
         position: absolute;
-        top: 13vh;
+        top: 14vh;
         right: 0;
         width: 100vw;
         height: 10vh;
