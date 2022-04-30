@@ -273,13 +273,17 @@ header {
     width: 100%;
     display: flex;
     justify-content: center;
-    font-size: 30px;
+    font-size: 25px;
+    border-radius: 5px;
+    background-attachment: fixed;
+    box-shadow: inset 6px 6px 12px rgba(0, 0, 0, 0.527) ;
 }
 
 .espaço h3 {
     margin: auto;
     font-family: var(--fonte-secundaria);
     text-shadow: 2px 2px 4px #502c14;
+    
 }
 
 @media (max-width: 1600px) {
