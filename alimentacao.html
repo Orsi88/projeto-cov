@@ -7,6 +7,11 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>ALIMENTAÇÃO</title>
     <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Pompiere&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
          body {
             background-color: #A1AC8E;
         }
@@ -15,11 +20,128 @@
             text-align: center;
             margin-top: 50px;
         }
+
+        a {
+            color: var(--cor3);
+            text-decoration: none;
+            transition: 0.3s;
+            
+        }
+
+        a:hover {
+            opacity: 0.7;
+        }
+
+        .img {
+            height: 400px;
+            background-image: url(imagens/comida.jpg);
+            background-position: center right;
+            background-size: cover ;
+            background-attachment: fixed;
+            border-radius: 5px;
+            margin-bottom: 60px;
+            box-shadow: inset 6px 6px 12px rgba(0, 0, 0, 0.781);
+        }
+
+        .topo {
+            text-align: center;
+            font-family: 'Amatic SC', cursive;
+            font-size: 30px;
+            text-shadow: 1px 1px 2px #714425;
+        }
+        
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .txt {
+            background-color: #6C765B;;
+            width: 1200px;
+            height: 450px;
+            font-family: 'Pompiere', cursive;
+            font-size: 26px;
+            text-shadow: 1px 1px 2px #714425;
+            text-align: justify;
+            border-radius: 5px;
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.623);
+            padding: 30px;
+
+        }
+
+        .titulo {
+            font-family: 'Amatic SC', cursive;
+            letter-spacing: 2px;
+            font-size: 26px;
+            text-shadow: 1px 1px 2px #714425;
+            text-align: center;
+        }
+
+        .credito {
+            text-align: center;
+            margin: 50px;
+            font-family: 'Pompiere', cursive;
+            font-size: 26px;
+            text-shadow: 1px 1px 2px #714425;
+        }
+
+        @media (max-width: 1200px) {
+          .txt {
+            width: 600px;
+            height: 700px;
+          }  
+        }
+
+        @media (max-width:700px) {
+            .txt {
+                width: 300px;
+                height: 1200px;
+            }
+        }
+
     </style>
 </head>
 <body>
     <header>
         <a href="index.html"><img src="imagens/logo2.0.png" alt="voltar"></a>
     </header>
+    <main>
+        <div class="topo">
+            <h1>ALIMENTAÇÃO SUSTENTÁVEL</h1>
+            <p>UMA ALIMENTAÇÃO SAUDÁVEL TAMBÉM É UMA ALIMENTAÇÃO SUSTENTÁVEL! CUIDE DE VOCÊ E DO PLANETA!</p>
+        </div>
+        <div class="img">
+
+        </div>
+        <section>
+            <div class="titulo">
+                <h2>COMO TER UMA ALIMENTAÇÃO SUSTENTÁVEL?</h2>
+            </div>
+            <div class="txt">
+                <ol>
+                    <li>
+                        Consumindo mais alimentos in natura, evitando embalagens e desperdícios no ambiente.
+                    </li><br>
+                    <li>
+                        Adquirir o hábito de ler os rótulos, saber identificar elementos como a indicação de alimentos transgênicos que significa que este alimento passou por modificação genética e no seu cultivo se utiliza vários tipos de agrotóxicos, oferecendo mais riscos à sustentabilidade assim.
+                    </li><br>
+                    <li>
+                        Evitando o desperdício de alimentos, ficar ligado com prazo de validade e o armazenamento; consumir todas as partes possíveis dos alimentos, aproveitando talos e cascas.
+                    </li><br>
+                    <li>
+                        Consumindo alimentos de safra/época, pois esses alimentos são naturalmente produzidos em grande quantidade, assim custando menos e diminuindo os impactos ambientais, pois não são necessários agrotóxicos.
+                    </li><br>
+                    <li>
+                        E estando envolvido na comunidade, atento e executando o papel de cidadão, cobrando o posicionamento de nossos representantes para a promoção de saúde.
+                    </li>
+                </ol>
+                
+            </div>
+            <div class="credito">
+                <p>Texto de: Jackeline Aguiar e Ludymila Barroso</p>
+                <a href="https://www.ufrgs.br/laranjanacolher/2019/11/05/alimentacao-sustentavel-voce-sabe-o-que-e/#:~:text=Uma%20alimenta%C3%A7%C3%A3o%20sustent%C3%A1vel%20%C3%A9%20um,sustentabilidade%20econ%C3%B4mica%2C%20nutricional%20e%20social"><img src="imagens/icon-loja.png" alt="link-site"></a>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
