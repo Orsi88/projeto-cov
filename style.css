@@ -241,10 +241,12 @@ header {
 .filha {
     font-family: var(--fonte-secundaria); 
     font-weight: bolder;
-    font-size: 30px;
+    font-size: 21px;
     color: var(--cor3);
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.288);
 }
+
+
 
 .txt-1 {
     height: 700px;
@@ -315,13 +317,12 @@ header {
 }
 
 .app {
-     height: 400px;
+     height: 300px;
      display: flex;
      flex-direction: row;
      justify-content: center;
      align-items: center;
      margin: 30px;
-     padding: 30px;
      margin-top: 120px;
 }
 
@@ -371,8 +372,24 @@ footer {
         width: 33%;
     } 
 
-    .espaço-2 {
+    .txt-1 {
         height: 900px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 60px;
+    
+    }
+    
+    .txt-12 {
+        height: 400px;
+        width: 700px;
+        padding: 20px;
+    }
+
+    .espaço-2 {
+        height: 600px;
     }
 
     .espaço-consumo {

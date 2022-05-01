@@ -8,9 +8,108 @@
     <title>SOBRE</title>
     <style>
 
+    @import url('https://fonts.googleapis.com/css2?family=Pompiere&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+        body {
+            background-color: #A1AC8E;
+            font-family: 'Pompiere', cursive;
+            font-size: 25px;
+            
+        }
+        header {
+            text-align: center;
+            margin-top: 50px;
+        }
+        a {
+            color: var(--cor3);
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        a:hover {
+            opacity: 0.7;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h1, h2 {
+          font-family: 'Amatic SC', cursive;
+          text-shadow: 1px 1px 2px #7143259f;  
+        }
+
+        ul {
+            list-style: none;
+        }
+       
+
+
+        .mãe {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .filha {
+            
+            height: 250px;
+            width: 500px;
+            background-color: #6C765B;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.514);
+        }
+
+        @media (max-width: 1300px){
+            .mãe {
+            display: flex;
+            flex-direction: column;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .filha {
+                width: 250px;
+                height: 300px;
+            }
+        }
+
     </style>
 </head>
 <body>
-    
+    <header>
+            <a href="index.html"><img src="imagens/logo2.0.png" alt="voltar"></a>
+    </header>
+    <main>
+
+        <h1>SOBRE NÓS</h1>
+
+            <div class="mãe">
+                <div class="filha">
+                    <h2>MISSÃO</h2>
+                    <p>Levar para sociedade ações, hábitos e costumes sustentáveis para serem aplicados no dia-dia das pessoas.</p>
+                </div>
+                <div class="filha">
+                    <h2>VALORES</h2>
+                    <ul>
+                        <li>Responsabilidade social</li>
+                        <li>Respeito pela natureza e pelos animais</li>
+                        <li>Ética</li>
+                        <li>Determinação</li>
+                    </ul>
+                </div>
+                <div class="filha">
+                    <h2>VISÃO</h2>
+                    <p>Preservar o nosso planeta para que as proximas gerações não terem que procurar outro.</p>
+                </div>
+            </div>
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
