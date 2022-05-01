@@ -8,9 +8,71 @@
     <title>CONTATO</title>
     <style>
 
+    @import url('https://fonts.googleapis.com/css2?family=Pompiere&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+         body {
+            background-color: #A1AC8E;
+            font-family: 'Pompiere', cursive;
+            font-size: 25px;
+        }
+
+        header {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        a {
+            color: var(--cor3);
+            text-decoration: none;
+            transition: 0.3s;
+            
+        }
+
+        a:hover {
+            opacity: 0.7;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .mãe {
+           
+            height: 400px;
+            width: 650px;
+            background-color: #6C765B;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.514);
+        }
+
+        h1, h2 {
+          font-family: 'Amatic SC', cursive;
+          text-shadow: 1px 1px 2px #714325cb;  
+        }
+
     </style>
 </head>
 <body>
-    
+    <header>
+        <a href="index.html"><img src="imagens/logo2.0.png" alt="voltar"></a>
+    </header>
+    <main>
+        <h1>ENTRE EM CONTATO</h1>
+
+        <div class="mãe">
+            <h2>Telefone:</h2>
+            <p>(62) 98594-7174 - Gabriela</p>
+            <p>(62) 993688545 - Júlia</p>
+            <h2>Endereço:</h2>
+            <p>Rua das Laranjeiras Qd.97 Lt.74, Nº 478, Setor do Berimbal.</p>
+        </div>
+    </main>
 </body>
 </html>

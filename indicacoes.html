@@ -8,9 +8,142 @@
     <title>INDICAÇÕES</title>
     <style>
 
+    @import url('https://fonts.googleapis.com/css2?family=Pompiere&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+
+        body {
+            background-color: #A1AC8E;
+            font-family: 'Pompiere', cursive;
+            font-size: 25px;
+        }
+
+        header {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        a {
+            color: var(--cor3);
+            text-decoration: none;
+            transition: 0.3s;
+            
+        }
+
+        a:hover {
+            opacity: 0.7;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h1, h2 {
+          font-family: 'Amatic SC', cursive;
+          text-shadow: 1px 1px 2px #714325cb;  
+        }
+        .mãe {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .filha {
+            
+            height: 250px;
+            width: 650px;
+            background-color: #6C765B;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.514);
+            display: flex;
+            justify-content: space-around;
+            
+        }
+
+        .neta {
+            width: 500px;
+            height: 200px;
+            margin: auto;
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+            
+        }
+
+        @media (max-width: 1300px){
+            .mãe {
+            display: flex;
+            flex-direction: column;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .filha {
+                width: 250px;
+                height: 300px;
+            }
+        }
     </style>
 </head>
 <body>
-    
+    <header>
+        <a href="index.html"><img src="imagens/logo2.0.png" alt="voltar"></a>
+    </header>
+    <main>
+        <h1>LOJAS DE PRODUTOS ECOLÓGICOS QUE INDICAMOS</h1>
+
+        <div class="mãe">
+            <div class="filha">
+                <h2>Amarilys</h2>
+                <div class="neta">
+                    <a href="https://amarilys.eco.br/" target="_blank"><img src="imagens/icon-loja.png" alt=""></a>
+                    <a href="https://instagram.com/amarilys_eco?igshid=YmMyMTA2M2Y="><img src="imagens/insta-icon-1.png" alt="">
+                    </a>
+                    <img src="imagens/loja-1.png" alt="">
+                </div>
+            </div>
+            <div class="filha">
+                <h2>Box Life</h2>
+                <div class="neta">
+                    <a href="https://boxlife.com.br/" target="_blank"><img src="imagens/icon-loja.png" alt=""></a>
+                    <a href="https://instagram.com/boxlife_ecoloja?igshid=YmMyMTA2M2Y=" target="_blank"><img src="imagens/insta-icon-1.png" alt="">
+                    </a>
+                    <img src="imagens/loja-2.png" alt="">
+                </div>
+            </div>
+            <div class="filha">
+                <h2>EECO</h2>
+                <div class="neta">
+                    <a href="https://www.eeco.pt/" target="_blank"><img src="imagens/icon-loja.png" alt=""></a>
+                    <a href="https://instagram.com/e_ecologico_?igshid=YmMyMTA2M2Y=" target="_blank"><img src="imagens/insta-icon-1.png" alt="">
+                    </a>
+                    <img src="imagens/loja-3.png" alt="">
+                </div>
+            </div>
+            <div class="filha">
+                <h2>BioEco Brasil</h2>
+                <div class="neta">
+                    <a href="https://linktr.ee/bioecobrasil" target="_blank"><img src="imagens/icon-loja.png" alt=""></a>
+                    <a href="https://instagram.com/bioeco_br?igshid=YmMyMTA2M2Y=" target="_blank"><img src="imagens/insta-icon-1.png" alt="">
+                    </a>
+                    <img src="imagens/loja-4.png" alt="">
+                </div>
+            </div>
+            <div class="filha">
+                <h2>Ecolologi</h2>
+                <div class="neta">
+                    <a href="https://shopee.com.br/ecollogi" target="_blank"><img src="imagens/icon-loja.png" alt=""></a>
+                    <a href="https://instagram.com/ecollogi?igshid=YmMyMTA2M2Y=
+                    " target="_blank"><img src="imagens/insta-icon-1.png" alt="">
+                    </a>
+                    <img src="imagens/loja-5.png" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
