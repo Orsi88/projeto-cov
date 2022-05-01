@@ -7,14 +7,107 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>CASA</title>
     <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Pompiere&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
          body {
             background-color: #A1AC8E;
+            font-family: 'Pompiere', cursive;
         }
 
         header {
             text-align: center;
             margin-top: 50px;
         }
+
+        a {
+            color: var(--cor3);
+            text-decoration: none;
+            transition: 0.3s;
+            
+        }
+
+        a:hover {
+            opacity: 0.7;
+        }
+
+        .mãe {
+            text-align: center;
+            font-family: 'Amatic SC', cursive;
+            font-size: 30px;
+            text-shadow: 1px 1px 2px #714425;
+        }
+
+        .mãe p {
+            font-weight: bolder;
+            letter-spacing: 2px;
+        }
+
+        .tia {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .dica {
+            width: 1200px;
+            height: 700px;
+            background-color: #6C765B;
+            margin: 20px;
+            padding: 20px;border-radius: 5px;
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.534);
+            
+        }
+
+        .txt {
+            font-size: 24px;
+            text-shadow: 1px 1px 2px #714425;
+            text-align: center;
+        }
+
+        .txt p {
+            font-size: 30px;
+        }
+
+        .txt h2 {
+            font-family: 'Amatic SC', cursive;
+        }
+
+        .video {
+            text-align: center;
+            
+        }
+
+        .img {
+            display: none;
+        } 
+
+        @media (max-width: 1200px) {
+            .dica {
+                width: 800px;
+            }
+        }
+
+        @media (max-width: 800px) {
+            .dica {
+                width: 300px;
+                height: 500px;
+            }
+
+            .video {
+                display: none;
+            }
+
+            .img {
+                display: block;
+                text-align: center;
+            }
+        }
+
+      
+
+
     </style>
 </head>
 <body>
@@ -22,8 +115,77 @@
         <a href="index.html"><img src="imagens/logo2.0.png" alt="voltar"></a>
     </header>
     <main>
-        <section>
-            
+        <section class="mãe">
+            <h1>UMA CASA MAIS SUSTENTÁVEL</h1>
+            <p>Dicas para que você seja sustentável dentro de casa também!</p>
+        </section>
+        <section class="tia">
+            <div class="dica">
+                <div class="txt">
+                   <h2>Compostagem doméstica</h2>
+                   <p>A compostagem doméstica é um hábito pouco conhecido mas muito interessante e últil!</p><br>
+                   <h3>Veja mais sobre:</h3>
+                </div>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/wA9hxus1EJM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                </div>
+                <div class="img">
+                    <a href="https://youtu.be/wA9hxus1EJM" target="_blank"><img src="imagens/icon-youtube.png" alt="link-vídeo"></a>
+                </div>
+            </div>
+            <div class="dica">
+                <div class="txt">
+                    <h2>Sabão caseiro</h2>
+                    <p>O sabão caseiro é uma forma de reutilizar o óleo sujo da sua batata frita!</p><br>
+                    <h3>Veja mais sobre:</h3>
+                </div>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/S-r_q7xH27M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="img">
+                    <a href="https://youtu.be/S-r_q7xH27M" target="_blank"><img src="imagens/icon-youtube.png" alt="link-vídeo"></a>
+                </div>
+            </div>
+            <div class="dica">
+                <div class="txt">
+                    <h2>Horta de apartamento</h2>
+                    <p>Horta não é uma coisa difícil de se ter, pra tudo tem um jeito!</p><br>
+                    <h3>Veja mais sobre:</h3>
+                </div>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/s5katIF1Zvk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="img">
+                    <a href="https://youtu.be/s5katIF1Zvk" target="_blank"><img src="imagens/icon-youtube.png" alt="link-vídeo"></a>
+                </div>
+            </div>
+            <div class="dica">
+                <div class="txt">
+                    <h2>Separando o lixo em casa</h2>
+                    <p>Como você separa o seu lixo? Sabia que tem uma forma certa de fazer isso?!</p><br>
+                    <h3>Veja mais sobre:</h3>
+                </div>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/j-SEPBFWU7U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="img">
+                    <a href="https://youtu.be/j-SEPBFWU7U" target="_blank"><img src="imagens/icon-youtube.png" alt="link-vídeo"></a>
+                </div>
+            </div>
+            <div class="dica">
+                <div class="txt">
+                    <h2>Brinquedos para o seu pet</h2>
+                    <p>Seu pet também deve ter hábitos sustentáveis! Pare de gastar com brinquedos que vão estragar em menos de uma semana!</p><br>
+                    <h3>Veja mais sobre:</h3>
+                </div>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/6mJ5dYzyYpI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="img">
+                    <a href="https://youtu.be/6mJ5dYzyYpI" target="_blank"><img src="imagens/icon-youtube.png" alt="link-vídeo"></a>
+                </div>
+            </div>
         </section>
     </main>
 </body>
