@@ -7,6 +7,16 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>AGRO-ECO</title>
     <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Pompiere&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+        
          body {
             background-color: #A1AC8E;
         }
@@ -26,12 +36,134 @@
         a:hover {
             opacity: 0.7;
         }
-        
+
+        .imagem {
+            height: 400px;
+            background-image: url(imagens/agroecologia.jpg);
+            background-position: center center;
+            background-size: cover ;
+            background-attachment: fixed;
+            border-radius: 5px;
+            margin: 10px;
+            margin-bottom: 30px;
+            box-shadow: inset 6px 6px 12px rgba(0, 0, 0, 0.781);
+        }
+
+        main {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+        .topo {
+            
+            width: 100%;
+            text-align: center;
+            font-family: 'Amatic SC', cursive;
+            font-size: 30px;
+            text-shadow: 1px 1px 2px #714425
+        }
+        .topo p {
+            font-weight: bolder;
+            letter-spacing: 2px;
+            padding: 20px;
+        }
+
+        .txt {
+            background-color: #6C765B;
+            width: 1000px;
+            height: 400px;
+            font-family: 'Pompiere', cursive;
+            font-size: 26px;
+            text-shadow: 1px 1px 2px #714425;
+            text-align: justify;
+            border-radius: 5px;
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.623);
+            padding: 30px;
+        }
+
+        .video {
+            text-align: center;
+            margin: 50px;
+            text-align: center;
+           
+        }
+
+        .img {
+            display: none;
+        }
+
+        .credito {
+            text-align: center;
+            margin: 50px;
+            font-family: 'Pompiere', cursive;
+            font-size: 26px;
+            text-shadow: 1px 1px 2px #714425;
+        }
+
+        @media (max-width: 1000px){
+
+            .video {
+                display: none;
+            }
+
+            .img {
+                display: block;
+                text-align: center;
+                margin: 50px;
+            }
+
+            .txt {
+            width: 600px;
+            height: 600px;
+            }
+        }
+
+        @media (max-width: 600px){
+            
+            .txt {
+            width: 300px;
+            height: 1100px;
+            }
+        }
+
     </style>
 </head>
 <body>
     <header>
         <a href="index.html"><img src="imagens/logo2.0.png" alt="voltar"></a>
     </header>
+    <main>
+        <section class="topo">
+            <h1>AGRO-ECO OU AGROECOLOGIA</h1>
+            <p>Agroecologia é uma forma de agricultura sustentável que agrega conhecimentos científicos e tradicionais</p>
+            <div class="imagem">
+
+            </div>
+        </section>
+        <section>
+            
+        </section>
+        <section>
+            <div class="txt">
+                <h2></h2>
+                <p>Agroecologia é um conceito que foi desenvolvido pelo pesquisador Howard, em 1934. Em 1950, entretanto, o termo “agroecologia” foi apropriado pelo pesquisador Lysenko e passou a ser utilizado em cursos de agronomia até 1964, quando, então, com o acordo MEC-Usaid, passou a ser abolido do ensino.
+                    <br><br>
+                Nesse período da década de 1960 até 1980, com as reivindicações por práticas de agricultura sustentável, o termo agroecologia passou a ser utilizado para representar a agricultura que incorpora as dimensões sociais, culturais, éticas e ambientais, como fazia a agronomia antes do acordo MEC-Usaid, de acordo com o professor e engenheiro agrônomo Carlos Pinheiro Machado, em seu livro “Dialética da Agroecologia“.
+                   <br><br> 
+                A agroecologia é uma forma de conhecimento que pretende superar os danos causados à biodiversidade e à sociedade como um todo pela prática da monocultura, do emprego dos transgênicos, dos fertilizantes industriais e dos agrotóxicos, sendo uma ferramenta para o desenvolvimento sustentável. </p>
+            </div>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/QFrNNj9RM5o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="img">
+                <a href=""><img src="imagens/icon-youtube.png" alt=""></a>
+            </div>
+        </section>
+        <section class="credito">
+            <p>Texto de: eCycle</p>
+                <a href="https://www.ecycle.com.br/agroecologia/" target="_blank"><img src="imagens/icon-loja.png" alt="link-site"></a>
+        </section>
+    </main>
 </body>
 </html>
