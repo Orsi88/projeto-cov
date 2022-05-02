@@ -7,6 +7,11 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>DOE E ADOTE</title>
     <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Pompiere&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
          body {
             background-color: #A1AC8E;
         }
@@ -15,11 +20,213 @@
             text-align: center;
             margin-top: 50px;
         }
+        a {
+            color: var(--cor3);
+            text-decoration: none;
+            transition: 0.3s;
+            
+        }
+
+        a:hover {
+            opacity: 0.7;
+        }
+
+        .topo {
+            text-align: center;
+            font-family: 'Amatic SC', cursive;
+            font-size: 30px;
+            text-shadow: 1px 1px 2px #714425;
+        }
+        .topo p {
+            font-weight: bolder;
+            letter-spacing: 2px;
+            padding: 20px;
+        }
+
+
+        .doe {
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+           
+        }
+
+        .adote{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .imagem-1 {
+            width: 100%;
+            height: 400px;
+            background-image: url(imagens/doação.jpg);
+            background-position: center center;
+            background-size: cover ;
+            background-attachment: fixed;
+            border-radius: 5px;
+            margin-bottom: 60px;
+            box-shadow: inset 6px 6px 12px rgba(0, 0, 0, 0.781);
+        }
+
+        .imagem-2 {
+            width: 100%;
+            height: 400px;
+            background-image: url(imagens/adote.jpg);
+            background-position: center center;
+            background-size: cover ;
+            background-attachment: fixed;
+            border-radius: 5px;
+            margin-bottom: 60px;
+            box-shadow: inset 6px 6px 12px rgba(0, 0, 0, 0.781);
+        }
+
+        .txt-1 {
+            background-color: #6C765B;
+            width: 800px;
+            height: 500px;
+            font-family: 'Pompiere', cursive;
+            font-size: 26px;
+            text-shadow: 1px 1px 2px #714425;
+            text-align: justify;
+            border-radius: 5px;
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.623);
+            padding: 30px;
+            
+        }
+
+        .txt-2 {
+            background-color: #6C765B;
+            width: 800px;
+            height: 700px;
+            font-family: 'Pompiere', cursive;
+            font-size: 26px;
+            text-shadow: 1px 1px 2px #714425;
+            text-align: justify;
+            border-radius: 5px;
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.623);
+            padding: 30px;
+        }
+
+        ul {
+            list-style: none;
+            font-size: 25px;
+            
+        }
+
+        li {
+        letter-spacing: 3px;
+    
+        margin-left: 32px;
+        }
+        .credito {
+            text-align: center;
+            margin: 50px;
+            font-family: 'Pompiere', cursive;
+            font-size: 26px;
+            text-shadow: 1px 1px 2px #714425;
+        }
+
+        @media (max-width: 800px){
+            
+            .txt-1 {
+                width: 300px;
+                height: 800px;
+                padding-right: 60px;
+            }
+            .txt-2 {
+                width: 300px;
+                height: 1200px;
+            }
+        }
+
     </style>
 </head>
 <body>
     <header>
         <a href="index.html"><img src="imagens/logo2.0.png" alt="voltar"></a>
     </header>
+    <main>
+        <section class="doe">
+            <div class="topo">
+                <h1>DOE</h1>
+                <p>Doar é muito mais que abrir a mão de algo para o próximo!</p>
+                <P>Doar é uma prática sustentável!</P>
+            </div>
+            <div class="imagem-1">
+
+            </div>
+            <div class="txt-1">
+                <h2>OQUE EU POSSO DOAR?</h2>
+                <p>Alguns exemplos do que doar:</p>
+                <ul>
+                    <li>
+                        SANGUE - hospital
+                    </li>
+                    <li>
+                        ROUPA - orfanato e instituição religiosa
+                    </li>
+                    <li>
+                        SAPATO - orfanato e instituição religiosa
+                    </li>
+                    <li>
+                        MEDULA - hospital
+                    </li>
+                    <li>
+                        COMIDA - orfanato,  instituição religiosa, ONG, escola... 
+                    </li>
+                    <li>
+                        DINHEIRO - ...
+                    </li>
+                    <li>
+                        BRINQUEDO - orfanato e escola
+                    </li>
+                    <li>
+                        MATERIAL ESCOLAR - escola
+                    </li>
+                    <li>
+                        LIVRO - escola
+                    </li>
+                    <li>
+                        MÓVEL - a outras pessoas (divulgue que o móvel está para doar)
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="adote">
+            <div class="topo">
+                <h1>ADOTE</h1>
+                <p>Adotar é uma ação além de nobre, sustentável!</p>
+                <p>Adotar é muito mais que salvar!</p>
+                
+            </div>
+            <div class="imagem-2">
+
+            </div>
+            <div class="txt-2">
+                <h2>POR QUE ADOTAR?</h2>
+                <p>Ao adotar um gatinho, um cachorrinho ou até uma criança, você tá dando oportunidade para o adotado de ter uma vida com mais qualidade, com mais afeto, com mais amor e a sensação de salvar uma vida é incomparável!</p>
+                <h3>Quem pensa em adotar um cão, deve analisar antes se pode garantir a saúde e bem-estar do animal</h3>
+                <p>
+                    A ONG onde irá adotá-lo; <br>
+                    O lado emocional dele (pode estar afetado, o que reflete no comportamento); <br>
+                    Se tem condição financeira para bancar as necessidades que o pet demanda, como saúde, alimentação e bem-estar; <br>
+                    Tempo suficiente para dedicar atenção e carinho; <br>
+                    Pode proporcionar espaço e estrutura na casa para receber e dar conforto ao cão.
+                </p>
+                <p>
+                    Atualmente, há 20 milhões de cachorros abandonados somente no Brasil, por irresponsabilidade de tutores que acham que cuidar de um animal, é como cuidar de uma plantinha que só precisa ser regada uma vez ao dia.
+                </p>
+
+                <img src="" alt="">
+            </div>
+        </section>
+        <div class="credito">
+            <p>Texto de: Totós da Teté - blog</p>
+            <a href="https://totosdatete.org.br/comportamento/adocao-responsavel/?gclid=Cj0KCQjw37iTBhCWARIsACBt1Iy_YTgSyXQuI4Xw26XL7NLUDP0bkDf01tsUWcRUWBUxQAqOKF-_VfsaAmvOEALw_wcB" target="_blank"><img src="imagens/icon-loja.png" alt="link-site"></a>
+        </div>
+    </section>
+    </main>
 </body>
 </html>
