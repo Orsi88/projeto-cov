@@ -7,6 +7,11 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>LAZER</title>
     <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Pompiere&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
          body {
             background-color: #A1AC8E;
         }
@@ -15,11 +20,197 @@
             text-align: center;
             margin-top: 50px;
         }
+
+        a {
+            color: var(--cor3);
+            text-decoration: none;
+            transition: 0.3s;
+            
+        }
+
+        a:hover {
+            opacity: 0.7;
+        }
+
+        .imagem {
+            height: 400px;
+            background-image: url(imagens/viagem.jpg);
+            background-position: center center;
+            background-size: cover ;
+            background-attachment: fixed;
+            border-radius: 5px;
+            margin-bottom: 60px;
+            box-shadow: inset 6px 6px 12px rgba(0, 0, 0, 0.781);
+
+        }
+
+        .foto img{
+            border-radius: 5px;
+            margin-bottom: 60px;
+            box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.781);
+
+        }
+
+        .txt-1 {
+            text-align: center;
+            font-family: 'Amatic SC', cursive;
+            font-size: 30px;
+            text-shadow: 1px 1px 2px #714425;
+        }
+
+        .txt-1 p {
+            font-weight: bolder;
+            letter-spacing: 2px;
+            padding: 20px;
+        }
+        
+        .destinos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .mãe {
+            width: 900px;
+            background-color: #6C765B;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            border-radius: 5px;
+            margin-bottom: 60px;
+            box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.781);
+
+        }
+        .txt-2 {
+            width: 700px;
+            height: 300px;
+            font-family: 'Pompiere', cursive;
+            font-size: 26px;
+            text-shadow: 1px 1px 2px #714425;
+            text-align: justify;
+            padding: 30px;
+            margin: 20px;
+        }
+
+
+
+        @media (max-width: 800px) {
+          
+            .mãe {
+            width: 650px;
+            height: 950px;
+          } 
+
+          .txt-2 {
+              width: 450px;
+              height: 400px;
+          }
+        }
+
+        @media (max-width:500px) {
+
+            
+            .mãe {
+                width: 350px;
+                height: 1000px;
+            }
+
+            .txt-2 {
+                width: 200px;
+                height: 650px;
+            }
+        }
+
     </style>
 </head>
 <body>
     <header>
         <a href="index.html"><img src="imagens/logo2.0.png" alt="voltar"></a>
     </header>
+    <section class="topo">
+        <div class="txt-1">
+            <h1>ECOTURISMO NO CENTRO-OESTE</h1>
+            <p>VAMOS CONHECER ALGUNS DESTINOS TURÍSTICOS LOCALIZADOS NA REGIÃO CENTRO-OESTE</p>
+        </div>
+        <div class="imagem">
+
+        </div>
+    </section>
+    <section class="destinos">
+        <div class="mãe">
+            <div class="txt-2">
+                <h2>BONITO-MG</h2>
+                <p>Oferece diversas atrações para todos perfis e idades, tanto para os mais aventureiros quanto para os que preferem só observar a paisagem e curtir a natureza super preservada da região.</p>
+                <P>Suas principais atrações conta com: trilha de cachoeiras, grutas, flutuações, passeios noturnos e passeios de aventuras </P>
+            </div>
+            <div class="foto">
+                <picture>
+                    <source media="(max-width: 500px)" srcset="imagens/bonito-pp.jpg">
+                    <source media="(max-width: 800px)" srcset="imagens/bonito-p.jpg">
+                    <img src="imagens/bonito.jpg" alt="">
+                </picture>
+            </div>
+        </div>
+        <div class="mãe">
+            <div class="txt-2">
+                <h2>PIRENÓPOLIS-GO</h2>
+                <p>Possui diversos casarões e igrejas centenárias que a fizeram ser tombada como Patrimônio Nacional pelo Iphan em 1989.</p>
+                <p>Conhecida também pela sua culinária.</p>
+            </div>
+            <div class="foto">
+                <picture>
+                    <source media="(max-width: 500px)" srcset="imagens/piri-pp.png">
+                    <source media="(max-width: 800px)" srcset="imagens/piri-p.png">
+                    <img src="imagens/piri.png" alt="">
+                </picture>
+            </div>
+        </div>
+        <div class="mãe">
+            <div class="txt-2">
+                <h2>PANTANAL</h2>
+                <p>A região recebeu da UNESCO os títulos de “Patrimônio Natural Mundial” e “Reserva da Biosfera”. </p>
+                <P>É um destino que também se destaca por sua gastronomia</P>
+                <P>Para apreciar toda essa beleza, uma das alternativas mais comuns é cruzar a região em passeios de barco. É possível também realizar passeios a cavalo, de jipe e até mesmo a pé</P>
+            </div>
+            <div class="foto">
+                <picture>
+                    <source media="(max-width: 500px)" srcset="imagens/pantanal-pp.jpeg">
+                    <source media="(max-width: 800px)" srcset="imagens/pantanal-p.jpeg">
+                    <img src="imagens/pantanal.jpeg" alt="">
+                </picture>
+            </div>
+        </div>
+        <div class="mãe">
+            <div class="txt-2">
+                <h2>CALDAS NOVAS-GO</h2>
+                <p>Lá encontra-se a maior estância hidrotermal do planeta, um local surpreendente, no qual a água brota do chão, atingindo temperaturas entre 40°C e 70°C.</p>
+                <p>A cidade conta com lindas trilhas de cachoeiras e parques aquáticos com esportes náuticos, trilhas e tirolesa.</p>
+            </div>
+            <div class="foto">
+                <picture>
+                    <source media="(max-width: 500px)" srcset="imagens/caldas-pp.jpg">
+                    <source media="(max-width: 800px)" srcset="imagens/caldas-p.jpg">
+                    <img src="imagens/caldas.jpg" alt="">
+                </picture>
+            </div>
+        </div>
+        <div class="mãe">
+            <div class="txt-2">
+                <h2>CHAPADA DOS VEADEIROS-GO</h2>
+                <p>Com um visual único, a Chapada dos Veadeiros é o destino ideal para os amantes de natureza que buscam aventuras por trilhas e cachoeiras. O local reserva ainda outras experiências, como um final de tarde no Jardim de Maytrea e banhos nas piscinas naturais de águas termais.</p>
+            </div>
+            <div class="foto">
+                <picture>
+                    <source media="(max-width: 500px)" srcset="imagens/chapa-pp.jpg">
+                    <source media="(max-width: 800px)" srcset="imagens/chapa-p.jpg">
+                    <img src="imagens/chapa.jpg" alt="">
+                </picture>
+            </div>
+        </div>
+    </section>
+    <section class="credito">
+
+    </section>
 </body>
 </html>
