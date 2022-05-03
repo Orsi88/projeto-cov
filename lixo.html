@@ -7,6 +7,11 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>LIXO</title>
     <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Pompiere&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
          body {
             background-color: #A1AC8E;
         }
@@ -15,11 +20,289 @@
             text-align: center;
             margin-top: 50px;
         }
+        a {
+            color: var(--cor3);
+            text-decoration: none;
+            transition: 0.3s;
+            
+        }
+
+        a:hover {
+            opacity: 0.7;
+        }
+
+        .imagem-1 {
+            width: 100%;
+            height: 400px;
+            background-image: url(imagens/lixo-lixo.jpg);
+            background-position: center center;
+            background-size: cover ;
+            background-attachment: fixed;
+            border-radius: 5px;
+            margin-bottom: 60px;
+            box-shadow: inset 6px 6px 12px rgba(0, 0, 0, 0.781);
+        }
+
+        .imagem-2 {
+            width: 100%;
+            height: 400px;
+            background-image: url(imagens/recicla.jpg);
+            background-position: top ;
+            background-size: cover ;
+            background-attachment: fixed;
+            border-radius: 5px;
+            margin-bottom: 60px;
+            box-shadow: inset 6px 6px 12px rgba(0, 0, 0, 0.781);
+
+            
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;  
+            }
+
+        .topo {
+            
+            width: 100%;
+            text-align: center;
+            font-family: 'Amatic SC', cursive;
+            font-size: 30px;
+            text-shadow: 1px 1px 2px #714425
+        }
+        .topo p {
+            font-weight: bolder;
+            letter-spacing: 2px;
+            padding: 20px;
+        }
+
+        .reflexao {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 2500px;
+            width: 800px;
+            font-family: 'Amatic SC', cursive;
+            font-size: 26px;
+            text-shadow: 1px 1px 2px #714425;
+            background-color: #6C765B;
+            margin: 50px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.445);
+            margin-bottom: 100px;
+        }
+
+
+
+        .mãe {
+            height: 1400px;
+            width: 800px;
+            font-family: 'Amatic SC', cursive;
+            font-size: 26px;
+            text-shadow: 1px 1px 2px #714425;
+            background-color: #6C765B;
+            margin: 50px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.445);
+        }
+        
+        .txt pre{
+            font-family: 'Pompiere', cursive;
+        }
+
+        .txt p {
+            font-family: 'Pompiere', cursive;
+            text-align: justify;
+        }
+
+        .mãe p {
+            font-family: 'Pompiere', cursive;
+            text-align: justify;
+        }
+
+        .credito {
+            text-align: center;
+            margin: 50px;
+            font-family: 'Pompiere', cursive;
+            font-size: 26px;
+            text-shadow: 1px 1px 2px #714425;
+        }
+        .video {
+            text-align: center;
+            background-color: #A1AC8E;
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 60px;
+            box-shadow: inset 6px 6px 12px rgba(0, 0, 0, 0.781);
+            margin: 50px;
+            padding: 10px;
+
+        }
+        .link-video {
+
+            display: none;
+        }
+
+        .poema {
+            display: none;
+        }
+
+        @media (max-width: 800px) {
+            
+            .video {
+                display: none;
+            }
+
+            .link-video {
+                display: block;
+                text-align: center;
+            }
+
+            .poema {
+                display: block;
+                font-weight: bolder;
+                font-size: 70px;
+            }
+
+            .reflexao {
+                height: 1700px;
+                width: 350px;
+                display: flex;
+                flex-direction: column ;
+                align-items: center;
+                
+            }
+
+            .txt pre {
+              display: none;
+                
+            }
+            .mãe {
+                height: 2000px;
+                width: 350px;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
         <a href="index.html"><img src="imagens/logo2.0.png" alt="voltar"></a>
     </header>
+    <main>
+        <section class="topo">
+            <h1>LIXO</h1>
+            <p>VAMOS REFLETIR SOBRE?</p>
+        </section>
+        <section class="imagem-1">
+
+        </section>
+        <section class="reflexao">
+            <div class="txt">
+                <h2>O que é?</h2>
+                <p>Lixo é todo e qualquer resíduo proveniente das atividades humanas ou gerados pela natureza em aglomerações urbanas. No dicionário, ela é definida como sujeira, imundice, coisa ou coisas inúteis, velhas, sem valor. Lixo, na linguagem técnica, é sinônimo de resíduos sólidos e é representado por materiais descartados pelas atividades humanas.</p>
+            </div>
+            <div class="video">
+
+                <h3>Veja sobre o lixo e a negligência do homem com seu próprio hábitate:</h3>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/E1rZFQqzTRc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
+            </div>
+            <div class="link-video">
+
+                <h3>Veja sobre o lixo e a negligência do homem com seu próprio hábitate:</h3>
+
+                <a href="https://youtu.be/E1rZFQqzTRc"><img src="imagens/icon-youtube.png" alt="icon-youtube"></a>
+            </div>
+            <div class="txt">
+                <pre>
+                    E o dia em que o sol não nascer?
+                    Que o mar se enfurecer...
+                    E tudo que tinha vida morrer?
+
+                    O que você vai fazer?
+
+                    E quando o azul do céu desaparecer?
+                    O solo apodrecer...
+                    E tudo adoecer?
+
+                    O que você vai fazer?
+                    Para onde você vai correr?
+                    Para Marte, Júpiter, Saturno ou Plutão?
+
+                    O Planeta Terra é a tua única casa, amado ser...
+                    E a tua verdadeira mãe (natureza) está a morrer...
+                    Pela tua falta de respeito, consciência e compaixão...
+
+                    Te peço então um momento de reflexão...
+                    Não jogue seu lixo no chão!
+
+                    Reduza, recicle, reutilize...
+                    Pense, repense, reflita, respeite...
+                    Preste mais atenção...
+                    Mas não use a tua mente e sim o teu coração...
+                    pois ele amado irmão, está sendo usado em vão!
+
+                    Ainda é tempo de mudar...
+                    Ainda é tempo de salvar os animais e natureza
+                    que o amor só querem nos dar.
+
+                    Mas a decisão é tua, amado ser...
+                    Tua casa (Terra) e tua alma, amado ser...
+                    Despenderão do que você escolher...
+
+                                            - Rama
+                </pre>
+            </div>
+            <div class="poema">
+                <p>L</p>
+                <p>?</p>
+                <p>X</p>
+                <p>O</p>
+            </div>
+            <div class="video">
+
+                <h3>Reflita um pouco mais sobre a relação entre sustentabilidade e a ação de viver:</h3>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/vI2gN2LW1p4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="link-video">
+
+                <h3>Reflita um pouco mais sobre a relação entre sustentabilidade e a ação de viver:</h3>
+
+                <a href="https://youtu.be/vI2gN2LW1p4"><img src="imagens/icon-youtube.png" alt="icon-youtube"></a>
+            </div>
+        </section>
+        <section class="topo">
+            <h1>E AGORA?</h1>
+            <p>CONHEÇA OS 5R's...</p>
+        </section>
+        <section class="imagem-2">
+
+        </section>
+        <section class="mãe">
+            <h2>Você já ouviu falar sobre os 5R's</h2>
+            <h3>1º REPENSAR</h3>
+            <p>Antes de efetuar qualquer compra reflita se é realmente necessária tal aquisição, se você não está comprando por impulso, talvez você até consiga reaproveitar algo que já possui. Avalie quais os danos este produto causa ao meio ambiente ou à sua saúde.</p><br>
+            <h3>2º RECUSAR</h3>
+            <p>Recuse produtos que vem em embalagens de plástico, prefira as recicláveis como de vidro e metal ou as biodegradáveis. Utilize ecobags ao invés de usar a sacolinha plástica do mercado. Prefira as mercadorias de empresas que tenham compromisso com o meio ambiente.</p><br>
+            <h3>3º REDUZIR</h3>
+            <p>Reduza seu consumo, o barato às vezes sai caro, por isso adquira produtos de qualidade e com maior durabilidade. Outras formas de reduzir são: preferir alimentos a granel, levando seu próprio recipiente, utilizar lâmpadas LED, usar pilhas recarregáveis, etc. Desta forma além de ter uma economia, você reduz o seu lixo.</p><br>
+            <h3>4º REUTILIZAR</h3>
+            <p>Dê uma nova vida para matérias que já foram utilizados. Doe roupas que você não usa mais, conserte o que estiver quebrado como eletrodomésticos e móveis. Use sua criatividade, resíduos de plásticos, papéis, metal, madeira, entre outros, podem ser utilizados no artesanato virando lindas peças de decoração.</p><br>
+            <h3>5º RECICLAR</h3>
+            <p>Faça coleta seletiva na sua casa, seus resíduos serão reciclados e transformados em outros produtos. Ao reciclar economiza-se energia, recursos naturais, contribui para a redução da poluição e prolonga a vida útil dos aterros sanitários.</p>
+        </section>
+        <section class="credito">
+            <p>Texto de: Sub Adm</p>
+            <a href="https://administracao.mppr.mp.br/modules/conteudo/conteudo.php?conteudo=366" target="_blank"><img src="imagens/icon-loja.png" alt="link-site"></a>
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
