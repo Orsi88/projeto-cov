@@ -65,22 +65,19 @@ a:hover {
 
 header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     font-family: 'Pompiere', cursive;
     font-weight: bolder;
     margin: 30px;
-    height: 14vh;
     padding-top: 20px;
     transition-timing-function: ease;
-    transition-duration: 2s;
+    transition-duration: 4s;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.336);
     
 }
 
-.menu {
-    margin-right: 20px;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.295);
-}
 
 .nav-list {
     list-style: none;
@@ -90,32 +87,19 @@ header {
 }
 
 .nav-list li {
-    letter-spacing: 3px;
-    margin-left: 32px;
+    letter-spacing: 4px;
+    margin-left: 35px;
     
 }
 
-
-.mobile-menu div {
-    width: 32px;
-    height: 2px;
-    background-color: var(--cor3);
-    margin: 8px;
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.404);
-    
-}
 
 
 @media (max-width: 750px) {
 
     
 
-    .insta {
-        display: block;
-    }
     .apoio-1 {
         display: block;
-        padding-right: 30px;
         margin: 30px;
     }
 
@@ -124,30 +108,12 @@ header {
     }
 
 
-    header {
-        display: flex;
-        justify-content: center;
-        margin-left: 70px;
-
-    }
-
 
     .nav-list {
-        margin-top: 30px;
-        position: absolute;
-        top: 16vh;
-        right: 0;
-        width: 100vw;
-        height: 10vh;
-        background: var(--cor0);
+        text-align: center;
         flex-direction:row;
-        align-items: center;
-        justify-content: space-around;
-        border-radius: 10px;
 
     }
-
-
 }
 
 .img-1 {
