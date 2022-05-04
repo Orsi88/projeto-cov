@@ -40,9 +40,7 @@ a:hover {
     opacity: 0.7;
 }
 
-.insta {
-    display: none;
-}
+
 .apoio-1 {
     display: none;
 }
@@ -97,12 +95,6 @@ header {
     
 }
 
-.mobile-menu {
-    display: none;
-    cursor: pointer; 
-
-
-}
 
 .mobile-menu div {
     width: 32px;
@@ -123,7 +115,7 @@ header {
     }
     .apoio-1 {
         display: block;
-        padding: 50px;
+        padding-right: 30px;
         margin: 30px;
     }
 
@@ -155,12 +147,6 @@ header {
 
     }
 
-    
-
-    .mobile-menu {
-        display: block;
-        
-    }
 
 }
 
